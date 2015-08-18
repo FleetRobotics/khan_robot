@@ -8,6 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  urdf
 )
 
 ## System dependencies are found with CMake's conventions
@@ -97,6 +98,8 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+
+
 ## Declare a cpp library
 # add_library(khan_platform
 #   src/${PROJECT_NAME}/khan_platform.cpp
@@ -104,6 +107,7 @@ include_directories(
 
 ## Declare a cpp executable
 # add_executable(khan_platform_node src/khan_platform_node.cpp)
+add_executable(parser src/parser.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
@@ -113,6 +117,7 @@ include_directories(
 # target_link_libraries(khan_platform_node
 #   ${catkin_LIBRARIES}
 # )
+target_link_libraries(parser ${catkin_LIBRARIES})
 
 #############
 ## Install ##
