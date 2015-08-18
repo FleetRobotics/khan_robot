@@ -1,0 +1,36 @@
+<robot name="khan">
+  <link name="base_link" />
+  <link name="wheel1_link" />
+  <link name="wheel2_link" />
+  <link name="wheel3_link" />
+  <link name="wheel4_link" />
+
+  <joint name="wheel1_joint" type="continuous">
+    <parent link="base_link" />
+    <child link="wheel1_link" />
+    <origin xyz="0.09275 -0.1125 0.030" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <joint name="wheel2_joint" type="continuous">
+    <parent link="base_link" />
+    <child link="wheel2_link" />
+    <origin xyz="0.09275 0.1125 0.030" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <joint name="wheel3_joint" type="continuous">
+    <parent link="base_link" />
+    <child link="wheel3_link" />
+    <origin xyz="-0.09275 0.1125 0.030" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <joint name="wheel4_joint" type="continuous">
+    <parent link="base_link" />
+    <child link="wheel4_link" />
+    <origin xyz="-0.09275 -0.1125 0.030" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+</robot>
