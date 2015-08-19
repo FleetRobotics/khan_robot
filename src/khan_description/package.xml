@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>khan_platform</name>
+  <name>khan_description</name>
   <version>0.0.1</version>
   <description>Package for KHAN slip/steer platform used in ME-2984 SS:Intro into Robotics</description>
 
