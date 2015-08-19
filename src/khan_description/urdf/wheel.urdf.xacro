@@ -27,15 +27,15 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
 	<xacro:macro name="khan_wheel" params="wheel_prefix *joint_pose">
 		<link name="${wheel_prefix}_wheel_link">
-			<inertial>
-				<mass value="2.637" />
+			<inertial> <!-- FIXME -->
+				<mass value=".05" />
 				<origin xyz="0 0 0" />
-				<inertia  ixx="0.02467" ixy="0" ixz="0" iyy="0.02467" iyz="0" izz="0.04411" />
+				<inertia  ixx="0.002" ixy="0" ixz="0" iyy="0.002" iyz="0" izz="0.004" />
 			</inertial>
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="package://khan_description/meshes/wheel.dae" />
+					<mesh filename="package://khan_description/cad/rover_wheel.stl" scale="0.001 0.001 0.001" />
 				</geometry>
 			</visual>
 			<collision>
