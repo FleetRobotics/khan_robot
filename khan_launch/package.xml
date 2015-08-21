@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>khan_launch</name>
+  <version>0.0.1</version>
+  <description>Launch files for Khan</description>
+
+  <maintainer email="jpz@vt.edu">Jason Ziglar</maintainer>
+
+  <license>BSD 3-Clause</license>
+
+  <url type="website">https://github.com/FleetRobotics/khan_robot</url>
+
+  <author email="csknabe@gmail.com">Coleman Knabe</author>
+  <author email="jpz@vt.edu">Jason Ziglar</author>
+  <author email="mishra42@gmail.com">John "Semi" Seminatore</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>khan_description</run_depend>
+  <run_depend>rviz</run_depend>
+  <run_depend>gazebo_ros</run_depend>
+</package>

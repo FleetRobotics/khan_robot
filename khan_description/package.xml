@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+  <name>khan_description</name>
+  <version>0.0.2</version>
+  <description>KHAN slip/steer URDF description used in ME-2984 SS:Intro into Robotics</description>
+
+  <maintainer email="jpz@vt.edu">Jason Ziglar</maintainer>
+
+  <license>BSD 3-Clause</license>
+
+  <url type="website">https://github.com/FleetRobotics/khan_robot</url>
+
+  <author email="csknabe@gmail.com">Coleman Knabe</author>
+  <author email="jpz@vt.edu">Jason Ziglar</author>
+  <author email="mishra42@gmail.com">John "Semi" Seminatore</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>urdf</run_depend>
+  <run_depend>xacro</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>roslaunch</run_depend>
+
+</package>
