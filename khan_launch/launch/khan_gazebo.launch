@@ -1,0 +1,16 @@
+<launch>
+  <arg name="world_name" default="worlds/empty.world"/>
+  <arg name="x" default="0" />
+  <arg name="y" default="0" />
+  <arg name="z" default="0" />
+  <arg name="roll" default="0" />
+  <arg name="pitch" default="0" />
+  <arg name="yaw" default="0" />
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world_name)"/>
+  </include>
+
+  <include file="$(find khan_description)/launch/description.launch" />
+  <node name="spawn_robot" pkg="gazebo_ros" type="spawn_model" args="-urdf -model khan -param robot_description -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)" />
+</launch>
