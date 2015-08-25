@@ -11,6 +11,10 @@
     <arg name="world_name" value="$(arg world_name)"/>
   </include>
 
-  <include file="$(find khan_description)/launch/description.launch" />
+  <include file="$(find khan_description)/launch/description.launch">
+    <arg name="is_sim" value="1" />
+  </include>
+
+  <include file="$(find khan_control)/launch/control.launch" />
   <node name="spawn_robot" pkg="gazebo_ros" type="spawn_model" args="-urdf -model khan -param robot_description -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)" />
 </launch>
