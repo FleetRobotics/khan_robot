@@ -17,7 +17,7 @@ This package has been tested and confirmed with the following basic prerequisite
 
 ## Installing Ubuntu Packages
 
-In order to install this package, you need to clone this repository into your catkin workspace. You also need to install the following packages, typically using the Ubuntu Package Management System:
+In order to install this package, you need to clone this repository into your catkin workspace src directory. You also need to install the following packages, typically using the Ubuntu Package Management System:
 
 1. ros-indigo-driver-base
 2. ros-indigo-polled-camera
