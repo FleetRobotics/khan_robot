@@ -7,6 +7,7 @@ project(khan_msgs)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
+  message_generation
 )
 
 ## Uncomment this if the package has a setup.py. This macro ensures
@@ -75,7 +76,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES khan_msgs
-#  CATKIN_DEPENDS roscpp std_msgs
+ CATKIN_DEPENDS std_msgs message_runtime
 #  DEPENDS system_lib
 )
 
