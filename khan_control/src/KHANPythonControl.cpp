@@ -14,6 +14,7 @@ khan::KHANHWInterface* HWInterface = NULL;
 void updateHW(const ros::TimerEvent& event)
 {
   CM->update(event.current_real, event.current_real - event.last_real);
+  HWInterface->write(event.current_real, event.current_real - event.last_real);
 }
 
 int main(int argc, char** argv)

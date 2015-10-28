@@ -98,6 +98,7 @@ KHANHWInterface::KHANHWInterface(const std::string& robot_ns) :
 {
   ros::NodeHandle nh(robot_ns);
   std::string rd_param;
+
   if(!nh.searchParam("robot_description", rd_param))
   {
     ROS_WARN_STREAM_NAMED("KHANHWInterface", " Cannot find URDF from parameter server. Bailing.");
@@ -162,6 +163,9 @@ KHANHWInterface::KHANHWInterface(const std::string& robot_ns) :
     //init PID controller for this joint
     j_info._controller.init(control_base, true);
   }
+
+  registerInterface(&_js_interface);
+  registerInterface(&_vj_interface);
 }
 
 /**
