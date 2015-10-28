@@ -24,15 +24,10 @@ int main(int argc, char** argv)
   std::string robot_ns;
   double period;
 
-  nhp.param("robot_namespace", robot_ns, std::string("/"));
+  nhp.param("robot_namespace", robot_ns, std::string(""));
   nhp.param("period", period, 1.0 / 50.0);
-
   //Ensure the namespace is valid
-  if(robot_ns.empty())
-  {
-    robot_ns = "/";
-  }
-  else if(robot_ns[robot_ns.length() - 1] != '/')
+  if(!robot_ns.empty() && robot_ns[robot_ns.length() - 1] != '/')
   {
     robot_ns = robot_ns + "/";
   }

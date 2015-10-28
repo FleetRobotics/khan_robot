@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
   <node name="khan" pkg="khan_control" type="khan_control">
-    <param name="robot_ns" value="/" />
+    <param name="robot_ns" value="" />
     <param name="period" value="0.02" />
   </node>
 </launch>
