@@ -37,5 +37,8 @@ int main(int argc, char** argv)
   CM = new controller_manager::ControllerManager(HWInterface);
   ros::Timer timer = nhp.createTimer(ros::Duration(period), updateHW);
 
-  ros::spin();
+  ros::MultiThreadedSpinner spinner(2);
+  spinner.spin();
+
+  return 0;
 }
