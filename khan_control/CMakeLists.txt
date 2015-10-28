@@ -4,8 +4,18 @@ project(khan_control)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  sensor_msgs
+  hardware_interface
+  controller_manager
+  dynamic_reconfigure
+  transmission_interface
+  control_toolbox
+  urdf
 )
+
+find_package(Boost REQUIRED COMPONENTS thread)
 
 ###################################
 ## catkin specific configuration ##
@@ -19,9 +29,16 @@ find_package(catkin REQUIRED
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES khan_platform
-#  CATKIN_DEPENDS roscpp rospy std_msgs
+ CATKIN_DEPENDS roscpp sensor_msgs
 #  DEPENDS system_lib
 )
+
+include_directories(include ${Boost_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
+
+add_library(khan_hwintf src/KHANHWInterface.cpp)
+
+add_executable(khan_control src/KHANPythonControl.cpp)
+target_link_libraries(khan_control khan_hwintf ${Boost_LIBRARIES} ${catkin_LIBRARIES})
 
 #############
 ## Install ##
@@ -38,11 +55,11 @@ catkin_package(
 # )
 
 ## Mark executables and/or libraries for installation
-# install(TARGETS khan_platform khan_platform_node
-#   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-#   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-#   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-# )
+install(TARGETS khan_hwintf khan_control
+  ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 
 ## Mark cpp header files for installation
 install(DIRECTORY config launch
