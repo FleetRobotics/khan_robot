@@ -187,7 +187,8 @@ void KHANHWInterface::write(ros::Time time, ros::Duration period)
     boost::mutex::scoped_lock lock(data._mutex);
     double error = data._vel_cmd - data._vel;
     //Compute PID command
-    const double new_vel = data._controller.computeCommand(error, period);
+    const double new_vel = data._vel_cmd + data._controller.computeCommand(error, period);
+    data._controller.printValues();
     //Package into message
     sensor_msgs::JointState msg;
     msg.header.stamp = time;
