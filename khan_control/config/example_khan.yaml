@@ -1,0 +1,20 @@
+front_left_wheel:
+  p: 0.01
+  i: 0.01
+  d: 0.01
+  i_clamp: 0.0
+front_right_wheel:
+  p: 0.01
+  i: 0.01
+  d: 0.01
+  i_clamp: 0.0
+rear_left_wheel:
+  p: 0.01
+  i: 0.01
+  d: 0.01
+  i_clamp: 0.0
+rear_right_wheel:
+  p: 0.01
+  i: 0.01
+  d: 0.01
+  i_clamp: 0.0

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+   <include file="$(find khan_description)/launch/description.launch">
+    <arg name="is_sim" value="0"/>
+  </include>
+  <!-- For a real robot, these parameters should be set for tuning individual motors -->
+  <rosparam command="load" file="$(find khan_control)/config/example_khan.yaml"  ns="/py_controller/"/>
+  <include file="$(find khan_control)/launch/hardware.launch" />
+  <include file="$(find khan_control)/launch/control.launch" />
+</launch>
