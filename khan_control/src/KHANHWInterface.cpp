@@ -80,13 +80,20 @@ void JointData::update(const sensor_msgs::JointState::ConstPtr& msg)
     }
   }
 
-  if(counter == msg->name.size())
+  if(counter >= msg->name.size())
   {
+    ROS_WARN_STREAM_NAMED("KHANHWInterface", _name << " received a JointState message which did not contain the required joint name.");
     return;
   }
 
-  _pos = msg->position[counter];
-  _vel = msg->velocity[counter];
+  if(counter < msg->position.size())
+  {
+    _pos = msg->position[counter];
+  }
+  if(counter < msg->velocity.size())
+  {
+    _vel = msg->velocity[counter];
+  }
 }
 
 KHANHWInterface::KHANHWInterface(const std::string& robot_ns) :
@@ -135,6 +142,12 @@ KHANHWInterface::KHANHWInterface(const std::string& robot_ns) :
     {
       ROS_WARN_STREAM_NAMED("KHANHWInterface", ii->name_ <<
         " has no valid joints with a velocity interface to control");
+      continue;
+    }
+
+    if(joint->name_.empty())
+    {
+      ROS_WARN_STREAM_NAMED("KHANHWInterface", "Encountered a joint with an empty name, refusing to use it.");
       continue;
     }
 
