@@ -4,38 +4,38 @@ INFO-
 INFO-
 INFO-		Running UGTODXF Translator .....
 INFO-
-INFO-		Start of Translation: Sat Feb 27 18:59:53 2016
+INFO-		Start of Translation: Tue Mar 01 13:14:53 2016
 INFO-
-STATUS-		Converting C:\Users\MISHR_~1\AppData\Local\Temp\mish185C5AD57quc.prt
+STATUS-		Converting C:\Users\MISHR_~1\AppData\Local\Temp\mish1AB4C331dbp1.prt
 STATUS-
 SUMMARY-
 SUMMARY-	Summary of Unigraphics Input Entities
-SUMMARY-	For Unigraphics File: C:\Users\MISHR_~1\AppData\Local\Temp\mish185C5AD57quc.prt
+SUMMARY-	For Unigraphics File: C:\Users\MISHR_~1\AppData\Local\Temp\mish1AB4C331dbp1.prt
 SUMMARY-	------------------------------------------------------------------
 SUMMARY-	Entity Type					Count
 SUMMARY-	------------------------------------------------------------------
-SUMMARY-	Line .....................................:	36
-SUMMARY-	Arc ......................................:	34
+SUMMARY-	Line .....................................:	38
+SUMMARY-	Arc ......................................:	40
 SUMMARY-	Circle ......................................:	11
 SUMMARY-	------------------------------------------------------------------
-SUMMARY-	Total ....................................:	81
+SUMMARY-	Total ....................................:	89
 SUMMARY-	------------------------------------------------------------------
 SUMMARY-
 STATUS-
 INFO-
-INFO-		Writing File: D:\khan_robot\khan_description\cad\Two_Tier_Bottom.dxf
+INFO-		Writing File: D:\khan_robot\khan_description\cad\DXF\Two_Tier_Bottom.dxf
 SUMMARY-	Summary of AutoCAD Output Entities
 SUMMARY-	------------------------------------------------------------------
 SUMMARY-	Entity Type					Count
 SUMMARY-	------------------------------------------------------------------
-SUMMARY-	Arc ......................................:	34
+SUMMARY-	Arc ......................................:	40
 SUMMARY-	Circle ...................................:	11
-SUMMARY-	Line .....................................:	36
+SUMMARY-	Line .....................................:	38
 SUMMARY-	Layout ...................................:	6
 SUMMARY-	------------------------------------------------------------------
-SUMMARY-	Total ....................................:	87
+SUMMARY-	Total ....................................:	95
 SUMMARY-	------------------------------------------------------------------
 SUMMARY-
 INFO-
-INFO-		End of Translation: Sat Feb 27 19:00:24 2016
-INFO-		Translation CPU time: 0 m, 30 sINFO-
+INFO-		End of Translation: Tue Mar 01 13:15:24 2016
+INFO-		Translation CPU time: 0 m, 31 sINFO-
