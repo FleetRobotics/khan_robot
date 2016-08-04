@@ -4,21 +4,21 @@ INFO-
 INFO-
 INFO-		Running UGTODXF Translator .....
 INFO-
-INFO-		Start of Translation: Tue Mar 01 13:25:05 2016
+INFO-		Start of Translation: Thu Aug 04 15:24:34 2016
 INFO-
-STATUS-		Converting C:\Users\MISHR_~1\AppData\Local\Temp\mish1AB4C331dbpg.prt
+STATUS-		Converting C:\Users\MISHR_~1\AppData\Local\Temp\mish14FC0DACec6j.prt
 STATUS-
 SUMMARY-
 SUMMARY-	Summary of Unigraphics Input Entities
-SUMMARY-	For Unigraphics File: C:\Users\MISHR_~1\AppData\Local\Temp\mish1AB4C331dbpg.prt
+SUMMARY-	For Unigraphics File: C:\Users\MISHR_~1\AppData\Local\Temp\mish14FC0DACec6j.prt
 SUMMARY-	------------------------------------------------------------------
 SUMMARY-	Entity Type					Count
 SUMMARY-	------------------------------------------------------------------
 SUMMARY-	Line .....................................:	4
 SUMMARY-	Arc ......................................:	4
-SUMMARY-	Circle ......................................:	13
+SUMMARY-	Circle ......................................:	17
 SUMMARY-	------------------------------------------------------------------
-SUMMARY-	Total ....................................:	21
+SUMMARY-	Total ....................................:	25
 SUMMARY-	------------------------------------------------------------------
 SUMMARY-
 STATUS-
@@ -29,13 +29,13 @@ SUMMARY-	------------------------------------------------------------------
 SUMMARY-	Entity Type					Count
 SUMMARY-	------------------------------------------------------------------
 SUMMARY-	Arc ......................................:	4
-SUMMARY-	Circle ...................................:	13
+SUMMARY-	Circle ...................................:	17
 SUMMARY-	Line .....................................:	4
 SUMMARY-	Layout ...................................:	6
 SUMMARY-	------------------------------------------------------------------
-SUMMARY-	Total ....................................:	27
+SUMMARY-	Total ....................................:	31
 SUMMARY-	------------------------------------------------------------------
 SUMMARY-
 INFO-
-INFO-		End of Translation: Tue Mar 01 13:25:36 2016
+INFO-		End of Translation: Thu Aug 04 15:25:05 2016
 INFO-		Translation CPU time: 0 m, 31 sINFO-
